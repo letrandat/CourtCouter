@@ -17,7 +17,7 @@
         android:text="@string/team" />
 
     <TextView
-        android:id="@+id/score_textView"
+        android:id="@+id/score_team_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:onClick="addThreePoints"
+        android:onClick="addTeamAThreePoints"
         android:text="@string/_3_points" />
 
     <Button
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:onClick="addTwoPoints"
+        android:onClick="addTeamATwoPoints"
         android:text="@string/_2_points" />
 
     <Button
@@ -44,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:onClick="addOnePoints"
+        android:onClick="addTeamAOnePoints"
         android:text="@string/free_throw" />
 
 </LinearLayout>
