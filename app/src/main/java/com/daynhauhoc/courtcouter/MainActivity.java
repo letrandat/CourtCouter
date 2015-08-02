@@ -1,16 +1,21 @@
 package com.daynhauhoc.courtcouter;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        score = 0;
+        displayForTeamA(score);
     }
 
     @Override
@@ -33,5 +38,28 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Displays the given score for Team A.
+     */
+    public void displayForTeamA(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.score_textView);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void addThreePoints(View view) {
+        score += 3;
+        displayForTeamA(score);
+    }
+
+    public void addTwoPoints(View view) {
+        score += 2;
+        displayForTeamA(score);
+    }
+
+    public void addOnePoints(View view) {
+        score += 1;
+        displayForTeamA(score);
     }
 }
