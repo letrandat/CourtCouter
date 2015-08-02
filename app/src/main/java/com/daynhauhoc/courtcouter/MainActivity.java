@@ -88,4 +88,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB += 1;
         displayForTeamB(scoreTeamB);
     }
+
+    public void resetMatch(View view) {
+        scoreTeamA = scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+    }
 }
